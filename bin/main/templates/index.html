@@ -13,7 +13,7 @@
 		var container = document.getElementById('map');
 		var options = {
 			center: new kakao.maps.LatLng(36.47787990392068, 127.62762570402397),
-			level: 5
+			level: 12
 		};
 		var map = new kakao.maps.Map(container, options);	
 		
@@ -29,14 +29,14 @@
 		
 		
 		var positions = [
-		    {
-		        content: '<div>을왕리해수욕장</div>', 
-		        latlng: new kakao.maps.LatLng(37.448078, 126.372649)		        
-		    },
-		    {
-		        content: '<div>오이도</div>', 
-		        latlng: new kakao.maps.LatLng(37.345358, 126.687468)
-		    }
+// 		    {
+// 		        content: '<div>을왕리해수욕장</div>', 
+// 		        latlng: new kakao.maps.LatLng(37.448078, 126.372649)		        
+// 		    },
+// 		    {
+// 		        content: '<div>오이도</div>', 
+// 		        latlng: new kakao.maps.LatLng(37.345358, 126.687468)
+// 		    }
 		];
 		
 		//마커에 X표시
@@ -76,10 +76,62 @@
 	};
 	
 </script>
+<style>
+html,body {height:100%; margin:0; padding:0;}
+.map {min-height:100%;}
+</style>
+<title>Mask-Map by ShipJH</title>
 
-<title>Insert title here</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/resources/assets/css/main.css" />
+
 </head>
-<body>
-	<div style="width: 100%; height: 100%" id="map"></div>
-</body>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<div class="content">
+						<h1>Radius</h1>
+						<h2>A fully responsive masonry-style<br />
+						portfolio template.</h2>
+						<a href="#" class="button big alt"><span>Let's Go</span></a>
+					</div>
+					<a href="#" class="button hidden"><span>Let's Go</span></a>
+				</div>
+			</header>
+
+		<!-- main -->
+			<div class="map" id="map"> 
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+<!-- 				<a href="#" class="info fa fa-info-circle"><span>About</span></a> -->
+<!-- 				<div class="inner"> -->
+<!-- 					<div class="content"> -->
+<!-- 						<h3>Vestibulum hendrerit tortor id gravida</h3> -->
+<!-- 						<p>In tempor porttitor nisl non elementum. Nulla ipsum ipsum, feugiat vitae vehicula vitae, imperdiet sed risus. Fusce sed dictum neque, id auctor felis. Praesent luctus sagittis viverra. Nulla erat nibh, fermentum quis enim ac, ultrices euismod augue. Proin ligula nibh, pretium at enim eget, tempor feugiat nulla.</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="copyright"> -->
+<!-- 						<h3>Follow me</h3> -->
+<!-- 						<ul class="icons"> -->
+<!-- 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+<!-- 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+<!-- 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+<!-- 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+<!-- 						</ul> -->
+<!-- 						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/resources/assets/js/jquery.min.js"></script>
+			<script src="/resources/assets/js/skel.min.js"></script>
+			<script src="/resources/assets/js/util.js"></script>
+			<script src="/resources/assets/js/main.js"></script>
+
+	</body>
 </html>
